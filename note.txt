@@ -1,0 +1,5 @@
+composer= classmap feature{
+ "classmap":[
+	"app/classes" //classmap dia akta folder er sokol class gula autoload kora jae
+	]
+}
