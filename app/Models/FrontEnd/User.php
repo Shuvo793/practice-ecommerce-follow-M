@@ -11,6 +11,6 @@ class User extends Model
     protected $dates=[
         'created_at'
     ];
-    protected $guarded=['email_varification_token','email_varify_at'];
+    protected $guarded=['reset_token'];
 
 }

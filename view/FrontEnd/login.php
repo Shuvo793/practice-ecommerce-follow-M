@@ -8,10 +8,7 @@
                         <div class="alert alert-<?php echo $_SESSION['type']?>">
                             <?php echo $_SESSION['message']; ?>
                         </div>
-                        <?php
-                            unset($_SESSION['type'],$_SESSION['message']);
-                            session_destroy();
-                        ?>
+                        <?php unset($_SESSION['type'],$_SESSION['message']);?>
                     <?php endif ; ?>
                     <form class="form-signin" method="post" enctype="multipart/form-data">
                         <h1 class="h3 mb-3 font-weight-normal text-center">Sign In</h1>

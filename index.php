@@ -8,7 +8,7 @@ use Illuminate\Database\Capsule\Manager;
 session_start();
 require_once 'vendor/autoload.php';
 
-$manager=new Manager();
+//$manager=new Manager();
 $manager->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',

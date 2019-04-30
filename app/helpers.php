@@ -1,7 +1,8 @@
 <?php
 if (!function_exists('frontendView')) {
-    function frontendView($view = 'index')
+    function frontendView($view = 'index',$data=[])
     {
+        extract($data);
         if (!empty($view)) {
             return require_once __DIR__.'/../view/FrontEnd/'.$view.'.php';
         } else {
@@ -10,8 +11,9 @@ if (!function_exists('frontendView')) {
     }
 }
 if (!function_exists('backendView')) {
-    function backendView($view = 'index')
+    function backendView($view = 'index',$data=[])
     {
+        extract($data);
         if (!empty($view)) {
             return require_once __DIR__.'/../view/BackEnd/'.$view.'.php';
         } else {
